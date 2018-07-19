@@ -1,0 +1,14 @@
+trigger_changelevel
+trigger_clickitem
+trigger_hurt
+trigger_multiple
+trigger_multipleall
+trigger_once
+trigger_push
+trigger_pushany
+trigger_pushobject
+trigger_secret
+trigger_teleport
+trigger_use
+trigger_useonce
+trigger_vehicle

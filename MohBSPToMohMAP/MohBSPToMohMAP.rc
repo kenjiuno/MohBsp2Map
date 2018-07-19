@@ -1,0 +1,218 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MohBSPToMohMAP.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MOHBSPTOMOHMAP_DIALOG DIALOGEX 0, 0, 315, 186
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MohBSPToMohMAP 0.0.3"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Input BSP file:",IDC_STATIC,5,5,141,8
+    EDITTEXT        IDC_EDIT_FILE_IN,5,15,113,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_REF_IN,124,15,20,14
+    LTEXT           "&Output MAP file:",IDC_STATIC,5,30,141,8
+    EDITTEXT        IDC_EDIT_FILE_OUT,5,40,113,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_REF_OUT,124,40,20,14
+    LTEXT           "Thick:",IDC_STATIC,5,64,141,8
+    EDITTEXT        IDC_EDIT_THICK,5,74,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Brush reduction level:",IDC_STATIC,5,89,141,8
+    COMBOBOX        IDC_COMBO_REDUCTION,5,98,141,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Unduplicate tris",IDC_CHECK_UNIQUE_TRIS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,113,141,10
+    CONTROL         "Remove sharpful brushes",IDC_CHECK_REMOVE_SHARP,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,5,123,141,10
+    CONTROL         "Recover brush texture coord",IDC_CHECK_RECOVER_TEXFC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,133,141,10
+    CONTROL         "Skew",IDC_CHECK_SKEW_SINK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,143,141,10
+    CONTROL         "Low process priority",IDC_CHECK_LOW_PRIORITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,153,141,10
+    DEFPUSHBUTTON   "&Decompile Now",IDC_BUTTON_START,5,168,67,14
+    LTEXT           "Working log:",IDC_STATIC,151,5,39,8
+    EDITTEXT        IDC_EDIT_LOG,151,15,156,137,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "&Copy All",IDC_BUTTON_COPY,151,158,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,3,480
+ PRODUCTVERSION 0,0,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x3L
+#else
+ FILEFLAGS 0x2L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Moh:AA's BSP to MAP sample software\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MohBSPToMohMAP MFC Application\0"
+            VALUE "FileVersion", "0, 0, 3, 480\0"
+            VALUE "InternalName", "MohBSPToMohMAP\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002,2004 Kentaro-K.21\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MohBSPToMohMAP.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MohBSPToMohMAP Application\0"
+            VALUE "ProductVersion", "0, 0, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EYE.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MOHBSPTOMOHMAP_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_REDUCTION, 0x403, 24, 0
+0x764c, 0x3020, 0x2e20, 0x2e2e, 0x4b20, 0x6565, 0x2070, 0x7274, 0x2069, 
+0x6873, 0x7061, 0x0065, 
+    IDC_COMBO_REDUCTION, 0x403, 31, 0
+0x764c, 0x3120, 0x2e20, 0x2e2e, 0x4220, 0x6e69, 0x2064, 0x7274, 0x7369, 
+0x7020, 0x7265, 0x7320, 0x7275, 0x6166, 0x6563, "\000" 
+    IDC_COMBO_REDUCTION, 0x403, 41, 0
+0x764c, 0x3220, 0x2e20, 0x2e2e, 0x4220, 0x6e69, 0x2064, 0x7274, 0x7369, 
+0x7720, 0x7469, 0x2068, 0x6973, 0x696d, 0x616c, 0x2072, 0x7573, 0x6672, 
+0x6361, 0x7365, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILTER_BSP          "BSPファイル(*.BSP)|*.BSP|すべてのファイル|*.*||"
+    IDS_FILTER_MAP          "MAPファイル(*.MAP)|*.MAP|すべてのファイル|*.*||"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\MohBSPToMohMAP.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
